@@ -15,21 +15,21 @@
   "keywords": [],
   "author": "",
   "devDependencies": {
-    "@hono/vite-dev-server": "^0.13.1",
+    "@hono/vite-dev-server": "^0.14.0",
     "@types/bun": "^1.1.6",
-    "@typescript-eslint/eslint-plugin": "^7.16.0",
-    "@typescript-eslint/parser": "^7.16.0",
-    "eslint": "^9.8.0",
-    "eslint-plugin-solid": "^0.14.1",
+    "@typescript-eslint/eslint-plugin": "^8.2.0",
+    "@typescript-eslint/parser": "^8.2.0",
+    "eslint": "^9.9.0",
+    "eslint-plugin-solid": "^0.14.2",
     "prettier": "^3.3.3",
     "typescript": "^5.5.4",
-    "vike-solid": "^0.6.2"
+    "vike-solid": "^0.7.2"
   },
   "dependencies": {
-    "hono": "^4.5.3",
-    "solid-js": "^1.8.19",
-    "tsx": "^4.16.5",
-    "vike": "^0.4.182",
-    "vite": "^5.3.5"
+    "hono": "^4.5.6",
+    "solid-js": "^1.8.21",
+    "tsx": "^4.17.0",
+    "vike": "^0.4.191",
+    "vite": "^5.4.2"
   }
 }
