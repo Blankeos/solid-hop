@@ -6,10 +6,7 @@
     "plugin:@typescript-eslint/recommended",
     "plugin:solid/typescript"
   ],
-  "plugins": [
-    "@typescript-eslint",
-    "solid"
-  ],
+  "plugins": ["@typescript-eslint", "solid"],
   "parserOptions": {
     "sourceType": "module",
     "ecmaVersion": "latest"

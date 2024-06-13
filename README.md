@@ -10,12 +10,10 @@ If you want a more opinionated and fully-featured boilerplate instead: http://gi
 
 ## Tech Stack:
 
-Modern and bleeding edge by default. Good luck lol. Can always swap it out with Node and Prettier.
-
 1. Vike + Hono - For SSR + Your own Server.
 2. SolidJS
-3. Bun
-4. Tools: ESLint, Biome
+3. Bun (Can swap this with Node easily if you want).
+4. Tools: ESLint, Prettier
 
 ## Quick Start
 
@@ -52,16 +50,3 @@ bun run build
 ```sh
 bun run preview # Just runs server.ts
 ```
-
-<!-- ## Become less bleeding edge
-
-Don't like Bun or Biome (pretty bleeding edge at the moment).
-
-
-
-1. Install the following:
-
-```sh
-pnpm install -D @types/node
-pnpm install @hono/node-server
-``` -->
