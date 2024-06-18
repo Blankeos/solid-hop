@@ -5,7 +5,9 @@ export default function RootLayout(props: FlowProps) {
     <div>
       <nav>
         <a href="/">Home</a>
+        <span>{" | "}</span>
         <a href="/dashboard">Dashboard</a>
+        <span>{" | "}</span>
         <Counter />
       </nav>
       {props.children}

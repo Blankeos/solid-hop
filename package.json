@@ -13,21 +13,21 @@
   "keywords": [],
   "author": "",
   "devDependencies": {
-    "@hono/vite-dev-server": "^0.12.1",
-    "@types/bun": "^1.1.3",
-    "@types/node": "^18.19.14",
-    "@typescript-eslint/eslint-plugin": "^7.12.0",
-    "@typescript-eslint/parser": "^7.12.0",
-    "eslint": "^8.57.0",
+    "@hono/vite-dev-server": "^0.12.2",
+    "@types/bun": "^1.1.4",
+    "@typescript-eslint/eslint-plugin": "^7.13.1",
+    "@typescript-eslint/parser": "^7.13.1",
+    "eslint": "^9.5.0",
     "eslint-plugin-solid": "^0.14.0",
     "prettier": "^3.3.2",
-    "typescript": "^5.4.5"
+    "typescript": "^5.4.5",
+    "vike-solid": "^0.6.0"
   },
   "dependencies": {
-    "hono": "^4.4.4",
+    "hono": "^4.4.6",
     "solid-js": "^1.8.17",
-    "tsx": "^4.15.1",
-    "vike": "^0.4.176",
-    "vite": "^5.2.13"
+    "tsx": "^4.15.6",
+    "vike": "^0.4.177",
+    "vite": "^5.3.1"
   }
 }

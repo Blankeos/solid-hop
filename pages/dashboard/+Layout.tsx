@@ -4,8 +4,10 @@ export default function DashboardLayout(props: FlowProps) {
   return (
     <div>
       <aside>
-        <a href="/dashboard">Profile</a>
+        <a href="/dashboard">Dashboard</a>
+        <span>{" | "}</span>
         <a href="/dashboard/settings">Settings</a>
+        <span>{" | "}</span>
         <Counter />
       </aside>
       {props.children}

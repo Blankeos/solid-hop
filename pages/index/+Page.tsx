@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <>
       <div>
-        <h1>My Vike app</h1>
+        <h1>My Vike + Solid app</h1>
         This page is:
         <ul>
           <li>Rendered to HTML.</li>
