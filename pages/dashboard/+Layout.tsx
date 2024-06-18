@@ -1,15 +1,15 @@
 import { createSignal, type FlowProps } from "solid-js";
 
-export default function RootLayout(props: FlowProps) {
+export default function DashboardLayout(props: FlowProps) {
   return (
     <div>
-      <nav>
-        <a href="/">Home</a>
-        <span>{" | "}</span>
+      <aside>
         <a href="/dashboard">Dashboard</a>
         <span>{" | "}</span>
+        <a href="/dashboard/settings">Settings</a>
+        <span>{" | "}</span>
         <Counter />
-      </nav>
+      </aside>
       {props.children}
     </div>
   );
@@ -20,7 +20,7 @@ function Counter() {
 
   return (
     <button type="button" onClick={() => setCount((count) => count + 1)}>
-      Root Counter {count()}
+      Dashboard Counter {count()}
     </button>
   );
 }
