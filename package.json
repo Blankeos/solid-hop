@@ -7,6 +7,7 @@
     "dev": "bunx --bun vite --host",
     "build": "vite build",
     "preview": "NODE_ENV=production bun run ./server.ts",
+    "preview-static": "vite preview",
     "lint": "eslint .",
     "format": "prettier format --write ."
   },
