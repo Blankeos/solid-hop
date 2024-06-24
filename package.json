@@ -15,17 +15,17 @@
   "author": "",
   "devDependencies": {
     "@hono/vite-dev-server": "^0.12.2",
-    "@types/bun": "^1.1.4",
+    "@types/bun": "^1.1.5",
     "@typescript-eslint/eslint-plugin": "^7.13.1",
     "@typescript-eslint/parser": "^7.13.1",
     "eslint": "^9.5.0",
-    "eslint-plugin-solid": "^0.14.0",
+    "eslint-plugin-solid": "^0.14.1",
     "prettier": "^3.3.2",
-    "typescript": "^5.4.5",
-    "vike-solid": "^0.6.0"
+    "typescript": "^5.5.2",
+    "vike-solid": "^0.6.1"
   },
   "dependencies": {
-    "hono": "^4.4.6",
+    "hono": "^4.4.7",
     "solid-js": "^1.8.17",
     "tsx": "^4.15.6",
     "vike": "^0.4.177",
