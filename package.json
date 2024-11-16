@@ -27,7 +27,6 @@
   },
   "dependencies": {
     "hono": "^4.6.5",
-    "my-app": ".",
     "solid-js": "^1.9.2",
     "vike": "^0.4.199",
     "vite": "^5.4.9"
