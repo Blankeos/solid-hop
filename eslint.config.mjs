@@ -1,4 +1,3 @@
-import js from "@eslint/js";
 import typescriptEslint from "@typescript-eslint/eslint-plugin";
 import tsParser from "@typescript-eslint/parser";
 import solid from "eslint-plugin-solid/configs/recommended";
@@ -8,16 +7,9 @@ export default [
   {
     ignores: ["dist/**/*", "**/*.js", "**/*.cjs", "**/*.mjs"],
   },
-  js.configs.recommended,
   {
     files: ["**/*.{ts,tsx}"],
     ...solid,
-    languageOptions: {
-      parser: tsParser,
-      parserOptions: {
-        project: "tsconfig.json",
-      },
-    },
   },
   {
     plugins: {

@@ -8,7 +8,8 @@
     "build": "vite build",
     "preview": "NODE_ENV=production bun run ./server.ts",
     "preview-static": "vite preview",
-    "lint": "prettier --check . && eslint .",
+    "lint": "prettier --check .; eslint .",
+    "lint:fix": "prettier --write .; eslint --fix .",
     "format": "prettier --write .",
     "update": "bunx npm-check-updates --interactive --format group"
   },
