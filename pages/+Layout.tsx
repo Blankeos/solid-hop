@@ -1,18 +1,15 @@
+import getTitle from "@/utils/get-title";
 import { createSignal, type FlowProps } from "solid-js";
-import { Head } from "vike-solid/Head";
-import { usePageContext } from "vike-solid/usePageContext";
+import { useMetadata } from "vike-metadata-solid";
+
+useMetadata.setGlobalDefaults({
+  title: getTitle("Home"),
+  description: "Demo showcasing Vike and Solid.",
+});
 
 export default function RootLayout(props: FlowProps) {
-  const pageContext = usePageContext();
-
   return (
     <>
-      <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Demo showcasing Vike" />
-        <link rel="icon" href={`${pageContext.urlParsed.origin}/logo.svg`} />
-      </Head>
-
       <div>
         <nav>
           <a href="/">Home</a>

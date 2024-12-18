@@ -4,7 +4,7 @@
   "description": "",
   "type": "module",
   "scripts": {
-    "dev": "bunx --bun vite --host",
+    "dev": "bunx --bun vite",
     "build": "vite build",
     "preview": "NODE_ENV=production bun run ./server.ts",
     "preview-static": "vite preview",
@@ -18,18 +18,19 @@
   "devDependencies": {
     "@hono/vite-dev-server": "^0.17.0",
     "@types/bun": "^1.1.14",
-    "@typescript-eslint/eslint-plugin": "^8.17.0",
-    "@typescript-eslint/parser": "^8.17.0",
-    "eslint": "^9.16.0",
-    "eslint-plugin-solid": "^0.14.4",
+    "@typescript-eslint/eslint-plugin": "^8.18.1",
+    "@typescript-eslint/parser": "^8.18.1",
+    "eslint": "^9.17.0",
+    "eslint-plugin-solid": "^0.14.5",
     "prettier": "^3.4.2",
     "typescript": "^5.7.2",
-    "vike-solid": "^0.7.6"
+    "vite": "^6.0.3"
   },
   "dependencies": {
-    "hono": "^4.6.12",
+    "hono": "^4.6.14",
     "solid-js": "^1.9.3",
-    "vike": "^0.4.206",
-    "vite": "^5.4.11"
+    "vike": "^0.4.210",
+    "vike-metadata-solid": "^1.0.4",
+    "vike-solid": "0.7.6"
   }
 }
