@@ -33,6 +33,12 @@ export default defineConfig({
     vike({}),
     vikeSolid(),
   ],
+  server: {
+    port: 3000,
+  },
+  preview: {
+    port: 3000,
+  },
   resolve: {
     alias: {
       "@": resolve(root),
