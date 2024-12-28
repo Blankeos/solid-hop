@@ -9,7 +9,7 @@
     "preview": "NODE_ENV=production bun run ./server.ts",
     "preview-static": "vite preview",
     "lint": "prettier --check .; eslint .",
-    "lint:fix": "prettier --write .; eslint --fix .",
+    "lint:fix": "prettier --write .; eslint --fix .; tsc --noEmit;",
     "format": "prettier --write .",
     "update": "bunx npm-check-updates --interactive --format group"
   },
@@ -24,7 +24,7 @@
     "eslint-plugin-solid": "^0.14.5",
     "prettier": "^3.4.2",
     "typescript": "^5.7.2",
-    "vite": "^6.0.5"
+    "vite": "^6.0.6"
   },
   "dependencies": {
     "hono": "^4.6.14",
