@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "NODE_ENV=production bun run ./server.ts",
     "preview-static": "vite preview",
-    "lint": "prettier --check .; eslint .",
+    "lint": "prettier --check .; eslint .; tsc --noEmit;",
     "lint:fix": "prettier --write .; eslint --fix .; tsc --noEmit;",
     "format": "prettier --write .",
     "update": "bunx npm-check-updates --interactive --format group"
@@ -18,8 +18,8 @@
   "devDependencies": {
     "@hono/vite-dev-server": "^0.17.0",
     "@types/bun": "^1.1.14",
-    "@typescript-eslint/eslint-plugin": "^8.18.2",
-    "@typescript-eslint/parser": "^8.18.2",
+    "@typescript-eslint/eslint-plugin": "^8.19.0",
+    "@typescript-eslint/parser": "^8.19.0",
     "eslint": "^9.17.0",
     "eslint-plugin-solid": "^0.14.5",
     "prettier": "^3.4.2",
@@ -27,9 +27,9 @@
     "vite": "^6.0.6"
   },
   "dependencies": {
-    "hono": "^4.6.14",
+    "hono": "^4.6.15",
     "solid-js": "^1.9.3",
-    "vike": "0.4.210",
+    "vike": "0.4.211",
     "vike-metadata-solid": "^1.0.4",
     "vike-solid": "^0.7.8"
   }
