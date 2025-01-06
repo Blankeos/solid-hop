@@ -16,7 +16,7 @@
   "keywords": [],
   "author": "",
   "devDependencies": {
-    "@hono/vite-dev-server": "^0.17.0",
+    "@hono/vite-dev-server": "^0.18.0",
     "@types/bun": "^1.1.14",
     "@typescript-eslint/eslint-plugin": "^8.19.0",
     "@typescript-eslint/parser": "^8.19.0",
@@ -24,12 +24,12 @@
     "eslint-plugin-solid": "^0.14.5",
     "prettier": "^3.4.2",
     "typescript": "^5.7.2",
-    "vite": "^6.0.6"
+    "vite": "^6.0.7"
   },
   "dependencies": {
-    "hono": "^4.6.15",
+    "hono": "^4.6.16",
     "solid-js": "^1.9.3",
-    "vike": "0.4.211",
+    "vike": "0.4.212",
     "vike-metadata-solid": "^1.0.4",
     "vike-solid": "^0.7.8"
   }
