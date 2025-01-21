@@ -17,19 +17,19 @@
   "author": "",
   "devDependencies": {
     "@hono/vite-dev-server": "^0.18.1",
-    "@types/bun": "^1.1.16",
-    "@typescript-eslint/eslint-plugin": "^8.20.0",
-    "@typescript-eslint/parser": "^8.20.0",
+    "@types/bun": "^1.1.18",
+    "@typescript-eslint/eslint-plugin": "^8.21.0",
+    "@typescript-eslint/parser": "^8.21.0",
     "eslint": "^9.18.0",
     "eslint-plugin-solid": "^0.14.5",
     "prettier": "^3.4.2",
     "typescript": "^5.7.3",
-    "vite": "^6.0.7"
+    "vite": "^6.0.10"
   },
   "dependencies": {
-    "hono": "^4.6.16",
+    "hono": "^4.6.17",
     "solid-js": "^1.9.4",
-    "vike": "0.4.217",
+    "vike": "0.4.218",
     "vike-metadata-solid": "^1.0.4",
     "vike-solid": "^0.7.8"
   }
