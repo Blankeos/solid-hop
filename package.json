@@ -18,18 +18,18 @@
   "devDependencies": {
     "@hono/vite-dev-server": "^0.18.1",
     "@types/bun": "^1.2.2",
-    "@typescript-eslint/eslint-plugin": "^8.23.0",
-    "@typescript-eslint/parser": "^8.23.0",
-    "eslint": "^9.19.0",
+    "@typescript-eslint/eslint-plugin": "^8.24.0",
+    "@typescript-eslint/parser": "^8.24.0",
+    "eslint": "^9.20.1",
     "eslint-plugin-solid": "^0.14.5",
-    "prettier": "^3.4.2",
+    "prettier": "^3.5.1",
     "typescript": "^5.7.3",
     "vite": "^6.1.0"
   },
   "dependencies": {
-    "hono": "^4.7.0",
+    "hono": "^4.7.1",
     "solid-js": "^1.9.4",
-    "vike": "0.4.220",
+    "vike": "0.4.222",
     "vike-metadata-solid": "^1.0.4",
     "vike-solid": "^0.7.8"
   }
