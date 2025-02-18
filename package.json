@@ -18,8 +18,8 @@
   "devDependencies": {
     "@hono/vite-dev-server": "^0.18.1",
     "@types/bun": "^1.2.2",
-    "@typescript-eslint/eslint-plugin": "^8.24.0",
-    "@typescript-eslint/parser": "^8.24.0",
+    "@typescript-eslint/eslint-plugin": "^8.24.1",
+    "@typescript-eslint/parser": "^8.24.1",
     "eslint": "^9.20.1",
     "eslint-plugin-solid": "^0.14.5",
     "prettier": "^3.5.1",
@@ -29,7 +29,7 @@
   "dependencies": {
     "hono": "^4.7.1",
     "solid-js": "^1.9.4",
-    "vike": "0.4.222",
+    "vike": "0.4.223",
     "vike-metadata-solid": "^1.0.4",
     "vike-solid": "^0.7.8"
   }
