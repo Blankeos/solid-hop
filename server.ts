@@ -46,14 +46,24 @@ app.get("*", async (c, next) => {
 });
 
 // Returning errors.
-app.onError((_, c) => {
+app.onError((error, c) => {
+  // Sentry.captureException(error); // Add sentry here or any monitoring service.
+
+  console.error({
+    cause: error.cause,
+    message: error.message,
+    stack: error.stack,
+  });
+
   return c.json(
     {
       error: {
+        cause: error.cause,
         message: c.error?.message ?? "Something went wrong.",
+        stack: privateConfig.NODE_ENV === "production" ? undefined : error.stack,
       },
     },
-    500
+    error.cause ?? 500
   );
 });
 
