@@ -44,4 +44,5 @@ export default defineConfig({
       "@": resolve(root),
     },
   },
+  envPrefix: ["PUBLIC_"],
 });
