@@ -8,6 +8,7 @@
 
   "New SolidJS Component": {
     "prefix": "newsolidcomponent",
+    "scope": "javascriptreact,typescriptreact",
     "body": [
       "import { mergeProps, ${2|VoidProps,FlowProps|} } from 'solid-js';",
       "",
@@ -96,7 +97,7 @@
   // Vike
   "Vike +data.ts": {
     "prefix": "newvikedata",
-    "scope": "typescript,javascript,javascriptreact,typescriptreact",
+    "scope": "typescript,javascript",
     "body": [
       "import { PageContext } from 'vike/types';",
       "",
