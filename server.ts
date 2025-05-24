@@ -14,7 +14,7 @@ app.get("/up", async (c) => {
 });
 
 // For the Backend APIs
-app.route("/api/*", appRouter);
+app.route("/api", appRouter);
 
 if (privateConfig.NODE_ENV === "production") {
   app.use(
