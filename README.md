@@ -17,12 +17,10 @@ If you want a more opinionated and fully-featured boilerplate instead: http://gi
 
 ## Quick Start
 
-1. Clone
+1. Get template
 
 ```sh
-git clone https://github.com/blankeos/solid-hop <your-app-name>
-cd <your-app-name>
-rm -rf .git # This is your app. Start the commits fresh :D
+npx degit https://github.com/blankeos/solid-hop <your-app-name>
 ```
 
 1. Install
