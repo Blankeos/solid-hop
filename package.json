@@ -4,9 +4,9 @@
   "description": "",
   "type": "module",
   "scripts": {
-    "dev": "bunx --bun vite --host",
-    "build": "vite build",
-    "preview": "NODE_ENV=production bun run ./server.ts",
+    "dev": "bunx --bun vike dev",
+    "build": "bunx --bun vike build",
+    "preview": "NODE_ENV=production bun run dist/server/index.js",
     "preview-static": "vite preview",
     "lint": "prettier --check .; eslint .; tsc --noEmit;",
     "lint:fix": "prettier --write .; eslint --fix .; tsc --noEmit;",
@@ -16,7 +16,6 @@
   "keywords": [],
   "author": "",
   "devDependencies": {
-    "@hono/vite-dev-server": "^0.19.1",
     "@types/bun": "^1.2.15",
     "@typescript-eslint/eslint-plugin": "^8.33.0",
     "@typescript-eslint/parser": "^8.33.0",
@@ -31,6 +30,7 @@
     "solid-js": "^1.9.7",
     "vike": "0.4.231",
     "vike-metadata-solid": "^1.0.4",
+    "vike-server": "^1.0.18",
     "vike-solid": "^0.7.11"
   }
 }
