@@ -11,7 +11,7 @@
     "lint": "prettier --check .; eslint .; tsc --noEmit;",
     "lint:fix": "prettier --write .; eslint --fix .; tsc --noEmit;",
     "format": "prettier --write .",
-    "update": "bun update -i --latest"
+    "update": "bunx npm-check-updates --format group --interactive"
   },
   "keywords": [],
   "author": "",
