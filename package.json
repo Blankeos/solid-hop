@@ -16,9 +16,9 @@
   "keywords": [],
   "author": "",
   "devDependencies": {
-    "@types/bun": "^1.2.19",
-    "@typescript-eslint/eslint-plugin": "^8.39.0",
-    "@typescript-eslint/parser": "^8.39.0",
+    "@types/bun": "^1.2.20",
+    "@typescript-eslint/eslint-plugin": "^8.39.1",
+    "@typescript-eslint/parser": "^8.39.1",
     "eslint": "^9.33.0",
     "eslint-plugin-solid": "^0.14.5",
     "prettier": "^3.6.2",
