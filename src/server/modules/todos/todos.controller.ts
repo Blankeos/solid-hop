@@ -1,6 +1,6 @@
 import { Hono } from "hono"
 
-export const todosController = new Hono().basePath("todos").get("/", async (c) => {
+export const todosController = new Hono().get("/", async (c) => {
   return c.json({
     todos: [
       {

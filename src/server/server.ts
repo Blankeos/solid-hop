@@ -21,9 +21,6 @@ apply(app)
 
 // Standard Errors
 app.onError((error, c) => {
-  // Sentry or any monitoring service capture
-  // Sentry.captureException(error);
-
   // 1. Parse into a standard shape.
   const {
     status = 500,
@@ -49,7 +46,11 @@ app.onError((error, c) => {
     endpoint: c.req.path,
     method: c.req.method,
   }
+
   console.error(log)
+
+  // Sentry or any monitoring service capture
+  // Sentry.captureException(error);
 
   return c.json(errorResponse, status)
 })

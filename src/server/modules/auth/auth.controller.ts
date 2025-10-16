@@ -1,7 +1,6 @@
 import { Hono } from "hono"
 
 export const authController = new Hono()
-  .basePath("auth")
   .get("/", async (c) => {
     return c.json({
       user: null,

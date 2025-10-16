@@ -7,9 +7,9 @@ const app = new Hono()
 
 app.use(csrf())
 
-/**
- * The base router. Include all the routes here from `./routes/*`
- */
-export const appRouter = app.route("/", authController).route("/", todosController)
+export const appRouter = app
+  // Extends routes here...
+  .route("/auth", authController)
+  .route("/todos", todosController)
 
 export type AppRouter = typeof appRouter
