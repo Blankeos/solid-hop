@@ -18,11 +18,10 @@
     },
     "types": [
       "@types/bun", // Remove when Node
-      "vite/client",
-      "vike-solid/client"
+      "vite/client"
     ],
     "jsx": "preserve",
     "jsxImportSource": "solid-js"
   },
-  "exclude": ["dist"]
+  "exclude": ["dist", "./server.ts", "server", "config.private.ts", "config.public.ts"]
 }

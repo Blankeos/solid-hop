@@ -1,0 +1,4 @@
+const tsrStartManifest = () => ({ "routes": { "__root__": { "filePath": "/Users/carlo/Desktop/Projects/solid-hop/src/routes/__root.tsx", "children": ["/", "/dashboard"], "preloads": ["/assets/main-ESkbbiF_.js"], "assets": [] }, "/": { "filePath": "/Users/carlo/Desktop/Projects/solid-hop/src/routes/index.tsx", "assets": [], "preloads": ["/assets/index-Cs9Ht_cj.js"] }, "/dashboard": { "filePath": "/Users/carlo/Desktop/Projects/solid-hop/src/routes/dashboard.tsx", "children": ["/dashboard/settings", "/dashboard/"], "assets": [], "preloads": ["/assets/dashboard-SZRbEhHu.js"] }, "/dashboard/settings": { "filePath": "/Users/carlo/Desktop/Projects/solid-hop/src/routes/dashboard/settings.tsx", "parent": "/dashboard" }, "/dashboard/": { "filePath": "/Users/carlo/Desktop/Projects/solid-hop/src/routes/dashboard/index.tsx", "parent": "/dashboard" } }, "clientEntry": "/assets/main-ESkbbiF_.js" });
+export {
+  tsrStartManifest
+};

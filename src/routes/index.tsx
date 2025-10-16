@@ -1,22 +1,22 @@
-import getTitle from "@/utils/get-title";
+import { createFileRoute } from "@tanstack/solid-router";
 import { createSignal } from "solid-js";
-import { useMetadata } from "vike-metadata-solid";
 
-export default function Page() {
-  useMetadata({
-    title: getTitle("Home"),
-  });
+export const Route = createFileRoute("/")({
+  component: Page,
+});
 
+function Page() {
   return (
     <>
       <div>
-        <h1>My Vike + Solid app</h1>
+        <h1>My TanStack + Solid app</h1>
         This page is:
         <ul>
           <li>Rendered to HTML.</li>
           <li>
             Interactive. <Counter />
           </li>
+          {process.env.PORT}
         </ul>
       </div>
     </>

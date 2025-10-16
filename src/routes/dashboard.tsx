@@ -1,16 +1,21 @@
-import { createSignal, type FlowProps } from "solid-js";
+import { createFileRoute, Link, Outlet } from "@tanstack/solid-router";
+import { createSignal } from "solid-js";
 
-export default function DashboardLayout(props: FlowProps) {
+export const Route = createFileRoute("/dashboard")({
+  component: DashboardLayout,
+});
+
+function DashboardLayout() {
   return (
     <div>
       <aside>
-        <a href="/dashboard">Dashboard</a>
+        <Link to="/dashboard">Dashboard</Link>
         <span>{" | "}</span>
-        <a href="/dashboard/settings">Settings</a>
+        <Link to="/dashboard/settings">Settings</Link>
         <span>{" | "}</span>
         <Counter />
       </aside>
-      {props.children}
+      <Outlet />
     </div>
   );
 }

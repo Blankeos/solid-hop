@@ -4,10 +4,9 @@
   "description": "",
   "type": "module",
   "scripts": {
-    "dev": "bunx --bun vike dev",
-    "build": "bunx --bun vike build",
-    "preview": "NODE_ENV=production bun run dist/server/index.js",
-    "preview-static": "vite preview",
+    "dev": "bunx --bun vite dev",
+    "build": "vite build",
+    "start": "vite preview",
     "lint": "prettier --check .; eslint .; tsc --noEmit;",
     "lint:fix": "prettier --write .; eslint --fix .; tsc --noEmit;",
     "format": "prettier --write .",
@@ -23,14 +22,16 @@
     "eslint-plugin-solid": "^0.14.5",
     "prettier": "^3.6.2",
     "typescript": "^5.9.3",
-    "vite": "^7.1.10"
+    "vite": "^7.1.10",
+    "vite-tsconfig-paths": "^5.1.4"
   },
   "dependencies": {
+    "@tanstack/solid-router": "^1.133.3",
+    "@tanstack/solid-start": "^1.133.3",
     "hono": "^4.9.12",
-    "solid-js": "1.9.9",
-    "vike": "0.4.242",
-    "vike-metadata-solid": "^1.0.4",
+    "nitro": "^3.0.1-alpha.0",
+    "solid-js": "^1.9.9",
     "vike-server": "^1.0.24",
-    "vike-solid": "^0.7.13"
+    "vite-plugin-solid": "^2.11.9"
   }
 }
