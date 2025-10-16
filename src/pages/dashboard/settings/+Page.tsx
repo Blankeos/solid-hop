@@ -1,10 +1,10 @@
-import getTitle from "@/utils/get-title";
-import { useMetadata } from "vike-metadata-solid";
+import { useMetadata } from "vike-metadata-solid"
+import getTitle from "@/utils/get-title"
 
 export default function Page() {
   useMetadata({
     title: getTitle("Home"),
-  });
+  })
 
   return (
     <>
@@ -13,5 +13,5 @@ export default function Page() {
         <p>Demonstrating nested layout.</p>
       </div>
     </>
-  );
+  )
 }

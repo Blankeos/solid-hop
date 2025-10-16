@@ -1,4 +1,4 @@
-import { Hono } from "hono";
+import { Hono } from "hono"
 
 export const todosController = new Hono().basePath("todos").get("/", async (c) => {
   return c.json({
@@ -9,5 +9,5 @@ export const todosController = new Hono().basePath("todos").get("/", async (c) =
         completed: false,
       },
     ],
-  });
-});
+  })
+})

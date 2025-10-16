@@ -1,4 +1,4 @@
-import { Hono } from "hono";
+import { Hono } from "hono"
 
 export const authController = new Hono()
   .basePath("auth")
@@ -6,7 +6,7 @@ export const authController = new Hono()
     return c.json({
       user: null,
       session: null,
-    });
+    })
   })
   .get("/users", async (c) => {
     return c.json({
@@ -20,5 +20,5 @@ export const authController = new Hono()
           name: "Andrea",
         },
       ],
-    });
-  });
+    })
+  })
