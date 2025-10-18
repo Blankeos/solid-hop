@@ -1,4 +1,4 @@
-/** Only place public configurations here. */
 export const publicEnv = {
-  BASE_ORIGIN: import.meta.env.PUBLIC_BASE_ORIGIN || "http://localhost:3000",
+  /** Development | Production */
+  PUBLIC_BASE_URL: import.meta.env.PUBLIC_BASE_URL || "http://localhost:3000",
 }

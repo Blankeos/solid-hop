@@ -24,7 +24,12 @@ export default function Page() {
             Interactive. <Counter />
           </li>
           <li>
-            Working fetch: {data.loading ? "Loading..." : data.error ? `Error: ${data.error.message}` : JSON.stringify(data())}
+            Working fetch:{" "}
+            {data.loading
+              ? "Loading..."
+              : data.error
+                ? `Error: ${data.error.message}`
+                : JSON.stringify(data())}
           </li>
         </ul>
       </div>

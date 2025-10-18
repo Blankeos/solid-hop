@@ -8,8 +8,8 @@ import type { ApiErrorResponse } from "@/server/lib/error"
 export const initHonoClient = (
   baseUrl: string,
   ssrProxyParams?: {
-    requestHeaders: Record<string, string>
-    responseHeaders: Headers
+    requestHeaders?: Record<string, string>
+    responseHeaders?: Headers
   }
 ) =>
   hc<AppRouter>(`${baseUrl}/api`, {
@@ -20,8 +20,16 @@ export const initHonoClient = (
       if (!response.ok) {
         const json: ApiErrorResponse = await response.json()
 
+        const errorMessage: string | undefined = (() => {
+          // Attempt to parse ZodError as a readable message
+          if ((json as any)?.error?.name === "ZodError")
+            return _formatZodIssues((json as any).error.issues)
+
+          return json.error.message
+        })()
+
         throw new HTTPException(response.status as ContentfulStatusCode, {
-          message: json.error.message || response.statusText,
+          message: errorMessage || response.statusText,
           cause: json.error.cause,
           res: response,
         })
@@ -44,3 +52,12 @@ export const initHonoClient = (
 const baseurl = typeof window === "undefined" ? "" : (window?.location?.origin ?? "")
 /** Use this on the client. */
 export const honoClient = initHonoClient(baseurl)
+
+/** Helper to format Zod issues into a readable message */
+function _formatZodIssues(
+  issues?: Array<{ code: string; message: string; path: string[] }>
+): string | undefined {
+  if (!issues?.length) return undefined
+
+  return issues.map((issue) => `${issue.path.join(".")}: ${issue.message}`).join(", ")
+}
