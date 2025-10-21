@@ -16,6 +16,16 @@
       "solid": "recommended"
     },
     "rules": {
+      "suspicious": {
+        "noExplicitAny": "off",
+        "noUnknownAtRules": "off"
+      },
+      "style": {
+        "noNonNullAssertion": "off"
+      },
+      "a11y": {
+        "noSvgWithoutTitle": "off"
+      },
       "correctness": {
         "noUnusedVariables": "warn"
       },

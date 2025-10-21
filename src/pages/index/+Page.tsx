@@ -1,7 +1,7 @@
-import { honoClient } from "@/lib/hono-client"
-import getTitle from "@/utils/get-title"
 import { createResource, createSignal } from "solid-js"
 import { useMetadata } from "vike-metadata-solid"
+import { honoClient } from "@/lib/hono-client"
+import getTitle from "@/utils/get-title"
 
 export default function Page() {
   useMetadata({
