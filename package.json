@@ -23,7 +23,7 @@
     "vite-tsconfig-paths": "^5.1.4"
   },
   "dependencies": {
-    "hono": "^4.10.1",
+    "hono": "^4.10.2",
     "solid-js": "1.9.9",
     "vike": "0.4.243",
     "vike-metadata-solid": "^1.0.4",
