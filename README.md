@@ -13,7 +13,7 @@ If you want a more opinionated and fully-featured boilerplate instead: http://gi
 1. Vike + Hono - For SSR + Your own Server.
 2. SolidJS
 3. Bun (Can swap this with Node easily if you want).
-4. Tools: ESLint, Prettier
+4. Tools: Biome
 
 ## Quick Start
 
