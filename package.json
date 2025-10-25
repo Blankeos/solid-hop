@@ -16,14 +16,14 @@
   "keywords": [],
   "author": "",
   "devDependencies": {
-    "@biomejs/biome": "^2.2.7",
-    "@types/bun": "^1.3.0",
+    "@biomejs/biome": "^2.3.0",
+    "@types/bun": "^1.3.1",
     "typescript": "^5.9.3",
     "vite": "^7.1.12",
     "vite-tsconfig-paths": "^5.1.4"
   },
   "dependencies": {
-    "hono": "^4.10.2",
+    "hono": "^4.10.3",
     "solid-js": "1.9.9",
     "vike": "0.4.244",
     "vike-metadata-solid": "^1.0.4",
