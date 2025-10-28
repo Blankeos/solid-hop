@@ -1,7 +1,6 @@
+import { apply, serve } from "@photonjs/hono"
 import { Hono } from "hono"
 import { HTTPException } from "hono/http-exception"
-import { apply } from "vike-server/hono"
-import { serve } from "vike-server/hono/serve"
 import { privateEnv } from "@/env.private"
 import { appRouter } from "./_app"
 import type { ApiErrorResponse } from "./lib/error"
@@ -55,5 +54,4 @@ app.onError((error, c) => {
   return c.json(errorResponse, status)
 })
 
-// No need to export default (especially Bun).
-serve(app, { port: privateEnv.PORT })
+export default serve(app, { port: privateEnv.PORT })
