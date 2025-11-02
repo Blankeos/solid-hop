@@ -1,9 +1,13 @@
 {
   "New SolidJS Page": {
     "prefix": "newsolidpage",
-    "scope": "typescript,javascript,javascriptreact,typescriptreact",
-    "body": ["export default function ${1:MyAwesome}Page() {", "  return <></>;", "}"],
-    "description": "Creates a new page in SolidJS."
+    "scope": "javascriptreact,typescriptreact",
+    "body": [
+      "export default function ${1:MyAwesome}Page() {",
+      "  return <></>;",
+      "}",
+    ],
+    "description": "Creates a new page in SolidJS.",
   },
 
   "New SolidJS Component": {
@@ -15,32 +19,21 @@
       "type ${1:MyComponent}Props = {};",
       "",
       "export default function ${1:MyComponent}(props: ${2|VoidProps,FlowProps|}<${1:MyComponent}Props>) {",
-      "  const defaultProps = mergeProps(",
-      "    {",
-      "      // Add default values here.",
-      "    },",
-      "    props",
-      "  );",
+      "  const defaultProps = mergeProps({}, props);",
       "",
       "  return <></>;",
       "}",
-      ""
+      "",
     ],
-    "description": "Creates a new SolidJS Component"
+    "description": "Creates a new SolidJS Component",
   },
 
   "New SolidJS Context File": {
     "prefix": "newsolidcontext",
-    "scope": "typescript,javascript,javascriptreact,typescriptreact",
+    "scope": "javascriptreact,typescriptreact",
     "body": [
-      "import {",
-      "  createContext,",
-      "  createSignal,",
-      "  FlowComponent,",
-      "  useContext,",
-      "  type Accessor,",
-      "  type Setter",
-      "} from 'solid-js';",
+      "import { createSignal, FlowComponent, type Accessor, type Setter } from 'solid-js';",
+      "import { createStrictContext } from '@/utils/create-strict-context';",
       "",
       "// ===========================================================================",
       "// Context",
@@ -51,15 +44,9 @@
       "  setCount: Setter<number>",
       "}",
       "",
-      "const ${1:CounterContext} = createContext({",
-      "  count: () => 0,",
-      "  setCount: (newCount: number) => {}",
-      "});",
+      "const [use${1:CounterContext}, ${1:CounterContext}Provider] = createStrictContext<${1:CounterContext}Value>('${1:CounterContext}');",
       "",
-      "// ===========================================================================",
-      "// Hook",
-      "// ===========================================================================",
-      "export const use${1:CounterContext} = () => useContext(${1:CounterContext});",
+      "export { use${1:CounterContext} };",
       "",
       "// ===========================================================================",
       "// Provider",
@@ -68,30 +55,25 @@
       "  const [count, setCount] = createSignal(0);",
       "",
       "  return (",
-      "    <${1:CounterContext}.Provider",
-      "      value={{",
-      "        count: count,",
-      "        setCount: setCount",
-      "      }}",
-      "    >",
+      "    <${1:CounterContext}Provider value={{ count, setCount }}>",
       "      {props.children}",
-      "    </${1:CounterContext}.Provider>",
+      "    </${1:CounterContext}Provider>",
       "  );",
       "};",
-      ""
+      "",
     ],
-    "description": "New SolidJS Context File"
+    "description": "New SolidJS Context File",
   },
 
   "Comment Headers (TS)": {
-    "scope": "typescript,javascript,javascriptreact,typescriptreact",
     "prefix": "commentheaders",
+    "scope": "typescript,javascript,javascriptreact,typescriptreact",
     "body": [
       "// ===========================================================================",
       "// ${1:Comment Headers}",
-      "// ==========================================================================="
+      "// ===========================================================================",
     ],
-    "description": "Makes a comment header to subsection the content in your files."
+    "description": "Makes a comment header to subsection the content in your files.",
   },
 
   // Vike
@@ -110,8 +92,8 @@
       "  return {",
       "    todo: data as { userId: number; id: number; title: string; completed: boolean },",
       "  };",
-      "}"
+      "}",
     ],
-    "description": "Vike +data.ts"
-  }
+    "description": "Vike +data.ts",
+  },
 }
