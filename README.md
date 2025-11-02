@@ -15,6 +15,12 @@ If you want a more opinionated and fully-featured boilerplate instead: http://gi
 3. Bun (Can swap this with Node easily if you want).
 4. Tools: Biome
 
+## Features:
+
+- [x] 🦋 **Type-safe Routing** - Inspired by TanStack Router, I'm the author of [`vike-routegen`](https://github.com/blankeos/vike-routegen) which codegens typesafe page routing for you, and it's a breeze!
+- [x] ⚡️ **Super-fast dev server** - way faster than NextJS thanks to Vite. You need to feel it to believe it! It can also literally build your app in seconds.
+- [x] **🥊 Robust Error Practices** - I thoughtfully made sure there's a best practice for errors here already. You can throw errors in a consistent manner in the backend and display them consistently in the frontend.
+
 ## Quick Start
 
 1. Get template

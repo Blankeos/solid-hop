@@ -1,12 +1,13 @@
 import { createSignal, type FlowProps } from "solid-js"
+import { getRoute } from "@/route-tree.gen"
 
 export default function DashboardLayout(props: FlowProps) {
   return (
     <div>
       <aside>
-        <a href="/dashboard">Dashboard</a>
+        <a href={getRoute("/dashboard")}>Dashboard</a>
         <span>{" | "}</span>
-        <a href="/dashboard/settings">Settings</a>
+        <a href={getRoute("/dashboard/settings")}>Settings</a>
         <span>{" | "}</span>
         <Counter />
       </aside>

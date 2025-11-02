@@ -1,5 +1,6 @@
 import { createSignal, type FlowProps } from "solid-js"
 import { useMetadata } from "vike-metadata-solid"
+import { getRoute } from "@/route-tree.gen"
 import getTitle from "@/utils/get-title"
 
 useMetadata.setGlobalDefaults({
@@ -12,9 +13,9 @@ export default function RootLayout(props: FlowProps) {
     <>
       <div>
         <nav>
-          <a href="/">Home</a>
+          <a href={getRoute("/")}>Home</a>
           <span>{" | "}</span>
-          <a href="/dashboard">Dashboard</a>
+          <a href={getRoute("/dashboard")}>Dashboard</a>
           <span>{" | "}</span>
           <Counter />
         </nav>
