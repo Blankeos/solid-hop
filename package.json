@@ -29,7 +29,7 @@
     "solid-js": "1.9.10",
     "vike": "^0.4.245",
     "vike-metadata-solid": "^1.0.4",
-    "vike-photon": "^0.1.13",
+    "vike-photon": "^0.1.14",
     "vike-solid": "^0.7.13"
   }
 }
