@@ -55,7 +55,7 @@ app.onError((error, c) => {
 })
 
 function _serve() {
-  if (privateEnv.NODE_ENV === "development") return serve(app, { port: privateEnv.PORT })
-  serve(app, { port: privateEnv.PORT })
+  // if (privateEnv.NODE_ENV === "development") return serve(app, { port: privateEnv.PORT })
+  return serve(app, { port: privateEnv.PORT })
 }
 export default _serve()
