@@ -25,11 +25,11 @@
   },
   "dependencies": {
     "@photonjs/hono": "^0.1.12",
-    "hono": "^4.11.1",
+    "hono": "^4.11.3",
     "solid-js": "1.9.10",
-    "vike": "^0.4.249",
+    "vike": "^0.4.250",
     "vike-metadata-solid": "^1.0.4",
     "vike-photon": "^0.1.24",
-    "vike-solid": "^0.7.14"
+    "vike-solid": "^0.7.18"
   }
 }
