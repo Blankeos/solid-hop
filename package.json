@@ -27,7 +27,7 @@
     "@photonjs/hono": "^0.1.12",
     "hono": "^4.11.7",
     "solid-js": "1.9.11",
-    "vike": "^0.4.252",
+    "vike": "^0.4.253",
     "vike-metadata-solid": "^1.0.4",
     "vike-photon": "^0.1.24",
     "vike-solid": "^0.8.0"
