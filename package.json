@@ -16,18 +16,18 @@
   "keywords": [],
   "author": "",
   "devDependencies": {
-    "@biomejs/biome": "^2.4.4",
+    "@biomejs/biome": "^2.4.6",
     "@blankeos/vike-routegen": "^0.0.3",
-    "@types/bun": "^1.3.9",
+    "@types/bun": "^1.3.10",
     "typescript": "^5.9.3",
     "vite": "^7.3.1",
     "vite-tsconfig-paths": "^6.1.1"
   },
   "dependencies": {
     "@photonjs/hono": "^0.1.12",
-    "hono": "^4.12.2",
+    "hono": "^4.12.5",
     "solid-js": "1.9.11",
-    "vike": "^0.4.253",
+    "vike": "^0.4.255",
     "vike-metadata-solid": "^1.0.5",
     "vike-photon": "^0.1.24",
     "vike-solid": "^0.8.1"
