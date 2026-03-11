@@ -1,0 +1,8 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "compatibility_date": "2026-01-20",
+  "name": "my-project",
+  "main": "virtual:photon:cloudflare:server-entry",
+  // Only required if your app (or one of your libraries) uses a Node.js API
+  "compatibility_flags": ["nodejs_compat"],
+}

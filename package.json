@@ -4,8 +4,8 @@
   "description": "",
   "type": "module",
   "scripts": {
-    "dev": "bunx --bun vike dev",
-    "build": "bunx --bun vike build",
+    "dev": "vike dev",
+    "build": "vike build",
     "preview": "NODE_ENV=production bun run dist/server/index.mjs",
     "preview-static": "vite preview",
     "check": "tsc --noemit",
@@ -24,6 +24,7 @@
     "vite-tsconfig-paths": "^6.1.1"
   },
   "dependencies": {
+    "@photonjs/cloudflare": "^0.1.13",
     "@photonjs/hono": "^0.1.12",
     "hono": "^4.12.5",
     "solid-js": "1.9.11",
