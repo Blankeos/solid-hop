@@ -26,7 +26,7 @@ If you want a more opinionated and fully-featured boilerplate instead: http://gi
 1. Get template
 
 ```sh
-npx degit https://github.com/blankeos/solid-hop <your-app-name>
+npx gitpick blankeos/solid-hop <your-app-name>
 ```
 
 1. Install
