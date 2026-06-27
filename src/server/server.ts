@@ -1,6 +1,7 @@
-import { apply, serve } from "@photonjs/hono"
+import vike from "@vikejs/hono"
 import { Hono } from "hono"
 import { HTTPException } from "hono/http-exception"
+import type { Server } from "vike/types"
 import { privateEnv } from "@/env.private"
 import { appRouter } from "./_app"
 import type { ApiErrorResponse } from "./lib/error"
@@ -16,7 +17,7 @@ app.get("/up", async (c) => {
 app.route("/api", appRouter)
 
 // Vike
-apply(app)
+vike(app)
 
 // Standard Errors
 app.onError((error, c) => {
@@ -54,4 +55,9 @@ app.onError((error, c) => {
   return c.json(errorResponse, status)
 })
 
-export default serve(app, { port: privateEnv.PORT })
+export default {
+  fetch: app.fetch,
+  prod: {
+    port: privateEnv.PORT,
+  },
+} satisfies Server
