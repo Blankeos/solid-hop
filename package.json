@@ -16,15 +16,15 @@
   "keywords": [],
   "author": "",
   "devDependencies": {
-    "@biomejs/biome": "^2.5.2",
+    "@biomejs/biome": "^2.5.3",
     "@blankeos/vike-routegen": "^0.0.3",
     "@types/bun": "^1.3.14",
-    "typescript": "^6.0.3",
-    "vite": "^8.1.3"
+    "typescript": "^7.0.2",
+    "vite": "^8.1.4"
   },
   "dependencies": {
     "@vikejs/hono": "^0.2.1",
-    "hono": "^4.12.27",
+    "hono": "^4.12.29",
     "solid-js": "1.9.14",
     "vike": "^0.4.260",
     "vike-metadata-solid": "^1.0.5",
